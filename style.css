@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Freeman&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Freeman&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ! WEBSITE SETTINGS */
+
+*,html{
+    margin: 0 ;
+    padding: 0 ;
+    text-decoration: none;
+}
+:root {
+    --Warnasatu : #e47b14;
+    --Warnadua : #0493dc;
+    --Warnatiga : #667BC6;
+    --Warnaempat : #E2DFD0;
+    --Warnalima:#EEE4B1;
+    --Fontsatu : sans-serif;
+    --fontdua : "Roboto";
+    --fonttiga : "Montserrat";
+    --fontempat : "Poppins";
+    --warnaenam : #F5F5F7;
+    --Warnatujuh:#0C0C0C;
+    --Warnadelapan:#F8FAE5;
+}
+
+img {
+   width: 400px;
+}
+
+
+/* ! END WEBSITE SETTINGS */
+
+
+/* ! NAVIGATION BAR STYLE */
+
+.logo h1 {
+    color: var(--Warnasatu);
+    font-size: 35px;
+    font-style: italic;
+    font-family: var(--fonttiga); 
+    text-shadow: 0 0 4px #F39F5A;
+    margin-left: 10px;
+}  
+
+nav {
+    background-color: var(--Warnadua);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap : 30px;
+    margin-right: 20px;
+    list-style: none;
+}
+nav ul li a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: var(--Warnalima);
+    font-weight: 700;
+    font-size: 19px;
+    transition: all;
+    transition-duration: 300ms;
+    
+}
+nav ul li a:hover {
+    color: var(--Warnasatu);
+    transition: 0.4s ease-in-out;
+}
+
+.icon  {
+    /* background-color: tomato; */
+    font-size: 38px;
+    display: none;
+    color: white;
+  }
+/* ! END NAVIGATION BAR STYLE */
+
+
+/*! HERO SECTION STYLE*/
+
+.hero-section h1 {
+    color: var(--Warnadua);
+    font-family: var(--fonttiga);
+    font-size: 40px;
+    margin-top: 100px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.hero-section h2 {
+    color: var(--Warnasatu);
+    font-family: var(--fonttiga);
+    font-size : 25px;
+    margin-top: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+.hero-sectionlogo  {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+.hero-sectionlogo img {
+    width: 500px;
+}
+
+
+/* ! END HERO SECTION STYLE*/
+
+
+/* ! SECTION KEGIATAN STYLE */
+.section-kegiatan {
+    background-color: var(--Warnasatu);
+    
+}
+.kegiatan-title h1 {
+    color: var(--Warnaempat);
+    font-family: var(--fonttiga);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+}
+.img-desc p {
+    font-family: var(--fontempat);
+    color: var(--Warnalima);
+    font-size: 20px;
+    padding-top: 20px;
+}
+.main-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.main-wrap img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+/* ! END SECTION KEGIATAN STYLE */
+
+/* ! SECTION GURU STYLE */
+.section-guru {
+    background-color: var(--Warnadua);
+}
+.guru-title h1 {
+    color: var(--Warnaempat);
+    font-family: var(--fonttiga);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+}
+.card-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.itemsone {
+    margin: 30px  ;
+    background-size: cover;
+    background-color: var(--Warnasatu);
+    border-radius: 20px;
+}
+.itemsone img {
+    width: 350px;
+    border-radius: 20px 20px 0px 0px;
+   
+}
+.itemsone h1 {
+    text-align: center;
+    font-family: var(--fonttiga);
+    color: var(--warnaenam);
+    padding-top: 10px;
+}
+.itemsone h2 {
+    text-align: center;
+    font-family: var(--fonttiga);   
+    font-size: 19px;         
+    color: var(--warnaenam);
+    padding-bottom: 10px;
+}
+
+/* ! END SECTION GURU STYLE */
+
+/* ! SECTION FASILITAS STYLE */
+.section-fasilitas {
+    background-color: var(--Warnasatu);
+}
+.fasilitas-title h1 {
+    color: var(--Warnaempat);
+    font-family: var(--fonttiga);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+}
+.card-wrap-fasilitas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.itemstwo {
+    margin: 30px  ;
+    background-size: cover;
+    background-color: var(--Warnadua);
+    border-radius: 20px;
+}
+.itemstwo img {
+    width: 350px;
+    border-radius: 20px 20px 0px 0px;
+   
+}
+.itemstwo h1 {
+    text-align: center;
+    font-family: var(--fonttiga);
+    color: var(--warnaenam);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* ! END SECTION FASILITAS STYLE */
+
+
+/* ! SECTION KONTAK STYLE */
+.section-kontak {
+    background-color: var(--Warnadua);
+   
+}
+.kontak-title h1 {
+    color: var(--Warnaempat);
+    font-family: var(--fonttiga);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+}
+.main-kontak {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wrap-kontak {
+    max-width: 860px;
+    display: grid;
+    grid-gap: 10px; 
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #F39F5A;
+    border-radius: 20px;
+}
+.left-kontak iframe {
+    padding: 10px 10px  10px ;
+    width: 100%;
+    height: 470px ;
+    border-radius: 25px;
+}
+.right-kontak {
+    padding: 25px 40px;
+}
+input {
+    width: 100%;
+    border: 2px solid rgba(0,0,0,0);
+    outline: none;
+    background-color: var(--Warnalima);
+    padding: 7px ;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    transition: .3s ;
+    font-size: 19px;
+    font-family: var(--Fontsatu);
+}
+input:hover {
+    background-color: #E2DFD0;
+}
+textarea {
+    background-color: var(--Warnalima);
+    height: 250px;
+    width: 103%;
+    outline: none;
+    border-radius: 5px ;
+    transition: .3s;
+    text-align: start;
+    padding-left: 5px;
+    font-size: 17px;
+    font-family: var(--Fontsatu);
+}
+textarea:hover {
+    background-color: #E2DFD0;
+   
+}
+button {
+    width: 105%;
+    outline: none;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 5px;
+    transition: .3s;
+    background-color: var(--Warnalima);
+    font-size: 17px;
+    font-family: var(--fonttiga);
+    font-weight: 600;
+} 
+button:hover {
+    background-color: #E2DFD0;
+}
+/* ! END SECTION KONTAK STYLE */
+
+/* ! FOOTER STYLE */
+.down {
+    bottom:0;
+    box-sizing: border-box;
+    background-color: var(--Warnatujuh);
+    height: 120px;
+    padding:35px 50px 60px 50px;
+
+}
+
+.down p {
+    text-align: center;
+    font-family: var(--fonttiga) ;
+    font-size: 19px;         
+    font-weight: 400;     
+    margin-top: 15px;                                                          
+    color: var(--Warnadelapan);
+}
+
+/* ! END FOOTER STYLE */
+
+/** Responsive for portrait mobile */
+@media screen and (min-width : 360px ) and (max-width: 460px) {
+    .logo h1 {
+        font-size: 23px;
+    }
+  nav {
+    height: 60px;
+    position: fixed;
+    top: 0;
+   
+  }
+    nav ul {
+        position: absolute;
+        top: 13px;
+        left: 0;
+        margin-top: 35px;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background-color: var(--Warnadua);
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+       
+    }
+    nav ul li a {
+        font-size: 20px;
+      
+    }
+    /* Responsive hero section */
+   
+    .hero-section h1 {
+        margin-top: 105px;
+        font-size: 35px;
+    }
+    .hero-section h2 {
+        margin-bottom: 30px;
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .hero-sectionlogo img {
+        margin-bottom: 20%;
+        width: 420px;
+    }
+    .itemsone {
+        margin-top: 2px;
+        margin-left: 42px;
+    }
+
+    .icon {
+        display: block;
+        margin-right: 20px;
+        font-size: 30px;
+        transition: .3s;
+    }
+    .icon:hover {
+        color: #e47b14;
+    }
+    nav ul.hidden {
+        display: none;
+    }
+    /* Responsive  hero section */
+
+    /* Responsive section guru */
+    .section-kegiatan {
+        width: 100%;
+    }
+    .main-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-wrap img {
+       width: 400px;
+    }
+    .img-desc p {
+        font-size: 19px;
+        margin: 7px;
+    }
+
+     .wrap-kontak {
+        grid-template-columns: 1fr;
+     }
+     .left-kontak iframe {
+        padding: 0;
+     }
+     input {
+        width: 110%;
+        height: 30px;
+        font-size: 20px;
+        margin-left: -25px;
+     }
+     textarea {
+        width: 112%;
+        margin-left: -25px;
+        font-size: 17px;
+     }
+     button {
+        font-size: 17px;
+        width:114%;
+        margin-left: -25px;
+        font-weight: 600;
+     }
+     
+       /* Responsive section kontak */
+
+  
+
+
+}
+/** Responsive for mobile */
+
+/* Responsive for tablet */
+@media screen and (min-width:568px ) and (max-width: 896px){   
+    
+    nav {
+        height: 60px;
+        position: fixed;
+        top: 0;
+       
+      }
+        nav ul {
+            position: absolute;
+            top: 13px;
+            left: 0;
+            margin-top: 35px;
+            width: 100%;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            background-color: var(--Warnadua);
+            flex-direction: column;
+            text-align: center;
+            gap: 30px;
+           
+        }
+        nav ul li a {
+            font-size: 20px;
+          
+        }
+        .icon {
+            display: block;
+            margin-right: 20px;
+            font-size: 30px;
+            transition: .3s;
+        }
+        .icon:hover {
+            color: #e47b14;
+        }
+        nav ul.hidden {
+            display: none;
+        }
+        .main-wrap {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .main-wrap img {
+            width: 700px;
+        }
+        .img-desc p {
+            margin: 5px;
+        }
+}
+
+@media screen and (min-width : 1320px ) and (max-width : 1366px ) {
+}
+
+@media screen and (min-width : 1180px) and (max-width : 1200px) {
+    
+} 
+
+@media screen and (min-width:1210px) and (max-width:1300px) {
+   
+}
+
+@media screen and (min-width : 1367px ) and (max-width: 1920px) {
+
+}
+/* Responsive for tablet */
